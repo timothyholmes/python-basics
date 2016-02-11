@@ -2,11 +2,15 @@
 
 Scripts developed during the Python Basics course at [Treehouse](https://teamtreehouse.com)
 
-Using python 3.5.0
+## Usage
+
+```shell
+python script_name.py
+```
 
 ## Contents
 
 + Shopping List
 + Number Game
 + Square Function
-+ Letter Game 
++ Kanye Album Game 
