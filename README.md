@@ -5,7 +5,7 @@ Scripts developed during the Python Basics course at [Treehouse](https://teamtre
 ## Usage
 
 ```shell
-python script_name.py
+python3.5  script_name.py
 ```
 
 ## Contents
