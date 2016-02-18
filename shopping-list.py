@@ -22,6 +22,10 @@ def main():
         elif new_items == 'help':
             show_help()
             continue
+        elif new_items == 'clear':
+            shopping_list = []
+            clear()
+            continue
         elif new_items == 'remove':
             show_list(shopping_list)
             idx = input('Which item? Tell me the number: ')
@@ -54,7 +58,7 @@ def quit(list_x):
     print('\nGoodbye!')
 
 def show_help():
-    print('\nSeperate each item with a comma!\n\nSpecial commands:\nDONE : quit the app\nSHOW : view the list\nREMOVE : delete an item\nHELP : help menu\n')
+    print('\nSeperate each item with a comma!\n\nSpecial commands:\nDONE : quit the app\nSHOW : view the list\nREMOVE : delete an item\nCLEAR : clear the list\nHELP : help menu\n')
 
 def add_new_item(x, list_x, index):
     if  index == -1:
@@ -67,5 +71,8 @@ def add_new_item(x, list_x, index):
 def remove_item(idx, list_x):
     item = list_x.pop(idx)
     print("Removed: {}".format(item))
+
+def clear():
+    print('\nList Cleared!\n\nKeep adding items:')
 
 main()
