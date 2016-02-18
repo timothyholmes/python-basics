@@ -65,8 +65,7 @@ def add_new_item(x, list_x, index):
     return list_x
 
 def remove_item(idx, list_x):
-    index = idx - 1
-    item = list_x.pop(index)
+    item = list_x.pop(idx)
     print("Removed: {}".format(item))
 
 main()
